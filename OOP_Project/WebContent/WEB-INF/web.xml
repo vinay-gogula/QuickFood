@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>OOP_Project</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+<servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/BookServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>PricingServlet</servlet-name>
+        <servlet-class>PricingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PricingServlet</servlet-name>
+        <url-pattern>/PricingServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>CancelUserServlet</servlet-name>
+        <servlet-class>CancelUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelUserServlet</servlet-name>
+        <url-pattern>/CancelUserServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>LookForAgentServlet</servlet-name>
+        <servlet-class>LookForAgentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LookForAgentServlet</servlet-name>
+        <url-pattern>/LookForAgentServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>CheckOrderAcceptedServlet</servlet-name>
+        <servlet-class>CheckOrderAcceptedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckOrderAcceptedServlet</servlet-name>
+        <url-pattern>/CheckOrderAcceptedServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>OrderAcceptedServlet</servlet-name>
+        <servlet-class>OrderAcceptedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderAcceptedServlet</servlet-name>
+        <url-pattern>/OrderAcceptedServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>CheckBookingServlet</servlet-name>
+        <servlet-class>CheckBookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckBookingServlet</servlet-name>
+        <url-pattern>/CheckBookingServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>DeclineServlet</servlet-name>
+        <servlet-class>DeclineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeclineServlet</servlet-name>
+        <url-pattern>/DeclineServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>AcceptServlet</servlet-name>
+        <servlet-class>AcceptServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AcceptServlet</servlet-name>
+        <url-pattern>/AcceptServlet</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+        <servlet-name>PostAgentnumberServlet</servlet-name>
+        <servlet-class>PostAgentnumberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostAgentnumberServlet</servlet-name>
+        <url-pattern>/PostAgentnumberServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>CollectServlet</servlet-name>
+        <servlet-class>CollectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CollectServlet</servlet-name>
+        <url-pattern>/CollectServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>OnthewayServlet</servlet-name>
+        <servlet-class>OnthewayServlet</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+        <servlet-name>OnthewayServlet</servlet-name>
+        <url-pattern>/OnthewayServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>DeliveredServlet</servlet-name>
+        <servlet-class>DeliveredServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeliveredServlet</servlet-name>
+        <url-pattern>/DeliveredServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>MailServlet</servlet-name>
+        <servlet-class>MailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MailServlet</servlet-name>
+        <url-pattern>/MailServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>ForgotServlet</servlet-name>
+        <servlet-class>ForgotServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForgotServlet</servlet-name>
+        <url-pattern>/ForgotServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>UpdateLocationServlet</servlet-name>
+        <servlet-class>UpdateLocationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateLocationServlet</servlet-name>
+        <url-pattern>/UpdateLocationServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>TrackServlet</servlet-name>
+        <servlet-class>TrackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TrackServlet</servlet-name>
+        <url-pattern>/TrackServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>VerifyServlet</servlet-name>
+        <servlet-class>VerifyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerifyServlet</servlet-name>
+        <url-pattern>/VerifyServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>ChangeField</servlet-name>
+        <servlet-class>ChangeField</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangeField</servlet-name>
+        <url-pattern>/ChangeField</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
