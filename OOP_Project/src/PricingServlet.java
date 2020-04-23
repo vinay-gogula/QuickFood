@@ -48,7 +48,8 @@ public class PricingServlet extends HttpServlet{
             ps.close();            
             if(i > 0) {
                 request.setAttribute("price",price);
-                request.setAttribute("discount",discount);         
+                request.setAttribute("discount",discount);  
+                session.setAttribute("destination",destination);
                 request.getRequestDispatcher("/confirmbook.jsp").forward(request, response); // Confirm Booking Page
             }   
         }

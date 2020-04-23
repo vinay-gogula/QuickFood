@@ -190,6 +190,13 @@
         <servlet-name>ChangeField</servlet-name>
         <url-pattern>/ChangeField</url-pattern>
     </servlet-mapping>
-
+<servlet>
+        <servlet-name>CheckDirections</servlet-name>
+        <servlet-class>CheckDirections</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckDirections</servlet-name>
+        <url-pattern>/CheckDirections</url-pattern>
+    </servlet-mapping>
 
 </web-app>

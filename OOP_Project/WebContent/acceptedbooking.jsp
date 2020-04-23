@@ -60,6 +60,8 @@ function showError(error) {
 <b> Hey <%=session.getAttribute("Agent") %>. </b>
 </header>
 
+<br>
+<center><a href="<%=request.getContextPath()%>/CheckDirections" target="_blank" class="w3-button w3-purple w3-large ">Check Directions</a></center>
 
 <table>
 <center><h3><b>Current Task</b></h3></center>
@@ -103,10 +105,12 @@ function showError(error) {
 <td><b>One Time Password : </b></td> 
 <td><%= session.getAttribute("otp")%></tr>
 </tr>
+<br>
 </table>
 
 	<tr>
 		<span style="display:inline-block; width:150;"></span>
+		
            <a href="<%=request.getContextPath()%>/CollectServlet" class="w3-button w3-blue w3-large ">Parcel Collected</a></center>
          
            <a href="<%=request.getContextPath()%>/OnthewayServlet" class="w3-button w3-orange w3-large ">Towards Destination</a></center>
@@ -114,13 +118,15 @@ function showError(error) {
              <a href="<%=request.getContextPath()%>/DeliveredServlet" class="w3-button w3-green w3-large ">Parcel Delivered</a></center>
   	   
     </tr>   
+    <br>
 <body onload="getLocation()">
 <center><form id="loc" action="UpdateLocationServlet">
 <input type="hidden" name="latitude" id="latitude" value="" />
 <input type="hidden" name="longitude" id="longitude" value="" />
 <input type=submit value="Update Location">
 </form>
-  
+ <br>
+ 
  </table>
  </body>
 </html>

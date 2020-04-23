@@ -29,7 +29,9 @@ public class TrackServlet extends HttpServlet {
             double ln = Double.parseDouble(lon);
             request.setAttribute("latitude", lt);
             request.setAttribute("longitude", ln);
-            request.getRequestDispatcher("trackagent.jsp").forward(request, response);
+            String url = "http://maps.google.com/maps?saddr="+lat+","+lon+"&daddr="+(String)session.getAttribute("destination");
+            response.sendRedirect(url);
+            //request.getRequestDispatcher("trackagent.jsp").forward(request, response);
                } while(rs.next());
             }
         }            
